@@ -1,6 +1,6 @@
 # Machine Learning - Implémentation 
 
-Les notebook sont des cours avec implémentation en python des thèmes suivants : 
+Les notebooks de ce dossier sont des implémentations en python des thèmes suivants : 
 
 ### Régression 
 - Régression Linéaire 
