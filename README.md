@@ -14,5 +14,6 @@ Les notebooks de ce dossier sont des implémentations en python des thèmes suiv
 
 ### Classification
 - K-Nearest Neighbors
+- Arbre de Decision : Classification (CART)
 
 ### Statistiques
