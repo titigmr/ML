@@ -20,6 +20,9 @@ class DecisionTreeClassif:
 
 	def fit(self, X, y, target_name=None):
 
+		X.reset_index(drop=True, inplace=True)
+		y.reset_index(drop=True, inplace=True)
+
 		if target_name is None:
 			target_name = np.unique(y)
 
@@ -29,6 +32,7 @@ class DecisionTreeClassif:
 	
 
 	def predict(self, X):
+		X.reset_index(drop=True, inplace=True)
 		return [self._predict_(inputs, X) for inputs in X.index]
 
 

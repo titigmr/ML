@@ -1,6 +1,5 @@
 import numpy as np
 import pandas as pd 
-from scipy.stats import mode
 from CART import DecisionTreeClassif
 
 class RandomForestClassif:
@@ -38,14 +37,14 @@ class RandomForestClassif:
     
     
     def predict(self, X):
+        X.reset_index(drop=True, inplace=True)
         return [self._predict_(inputs, X) for inputs in X.index]
 
 
     def _predict_(self, inputs, X):
         
-        X.reset_index(drop=True, inplace=True)
-        
         all_predicts = []
+        
         for tree in self.__all_tree__ :
             node = tree.tree
             
@@ -61,4 +60,4 @@ class RandomForestClassif:
 
             all_predicts.append(node.classe_predict)
             
-        return mode(all_predicts).mode[0]
+        return pd.Series(all_predicts).mode()[0]
