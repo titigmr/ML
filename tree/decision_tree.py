@@ -6,7 +6,7 @@ warnings.filterwarnings('ignore')
 """
 
 Implémentation de l'algorithme CART : Arbre de Décision pour de la classification.
-La métrique de split utilisée est l'indice de Gini. 
+La métrique de split utilisée est l'indice de Gini ou le gain d'information. 
 
 """
 
@@ -126,7 +126,7 @@ class DecisionTreeClassif:
             best_gini = self._gini_(y)
 
         if self.criterion == "entropy":
-            best_gain = 0
+            best_gain = 0.01
 
         leaf = Leaf(X, y, target_name, self.all_classes)
         leaf.node = None

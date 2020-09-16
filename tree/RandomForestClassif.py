@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd 
-from CART import DecisionTreeClassif
+from decision_tree import DecisionTreeClassif
 
 class RandomForestClassif:
     
