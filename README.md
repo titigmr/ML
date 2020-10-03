@@ -4,6 +4,8 @@ Les notebooks de ce dossier sont des implémentations en python des thèmes suiv
 
 ### Régression 
 - Régression Linéaire 
+- Régression Lasso
+- Régression Ridge
 
 ### Optimisation
 - Descente de Gradient
@@ -14,6 +16,7 @@ Les notebooks de ce dossier sont des implémentations en python des thèmes suiv
 
 ### Classification
 - K-Nearest Neighbors
-- Arbre de Decision : Classification (CART)
+- Arbre de Decision : CART
+- Random Forests
 
 ### Statistiques
